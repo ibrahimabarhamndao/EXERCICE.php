@@ -19,7 +19,7 @@ echo "\n";
 
 $sommeNotes = 0;
 foreach ($etudiants as $etudiant) {
-    $sommeNotes += $etudiant["note"]; 
+    $sommeNotes = $sommeNotes + $etudiant["note"]; 
 }
 $moyenne = $sommeNotes / count($etudiants);
 echo "2. La moyenne générale de la classe est : " . $moyenne . "/20\n\n";
